@@ -38,7 +38,7 @@ while True:
         continue
 
     div = print("-------------------------")
-    vnTotal = vn / 100 * total
+    vnTotal = vn / total * 100
     c1Perc = c1 / total * 100
     c2Perc = c2 / total * 100
     c3Perc = c3 / total * 100
