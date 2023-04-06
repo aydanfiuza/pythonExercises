@@ -7,11 +7,9 @@ vb = 0
 total = 0
 tentativa = 0
 
-while True:
+while voto != 0:
     voto = int(input("Votos para os respectivos candidatos:\n1 - José;\n2- João;\n3 - Tomás;\n4 - Mariana;\n5 - Voto Nulo;\n6 - Voto em Branco;\nPara sair do sistema, digite 0.\nVote: "))
-    if voto == 0:
-        break
-    elif voto == 1:
+    if voto == 1:
         c1 += 1
         total += 1
     elif voto == 2:
