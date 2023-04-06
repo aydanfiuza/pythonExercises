@@ -20,9 +20,6 @@ request_estrogenio = youtube.videos().list(
     id = 'JUVXsS8k5qs'
 )
 
-def gemaRequest():
-    response_views = request_gema.execute()
-    return response_views['items'][0]['statistics']['likeCount']
 
 response_estrogenio = request_estrogenio.execute()
 print("Título do vídeo:", response_estrogenio['items'][0]['snippet']['title'])
@@ -35,4 +32,5 @@ response_name = request_gema.execute()
 print("Título do vídeo:", response_name['items'][0]['snippet']['title'])
 response_views = request_gema.execute()
 print("Número de views:", response_views['items'][0]['statistics']['viewCount'])
-print(gemaRequest())
+response_views = request_gema.execute()
+print("Número de views:", response_views['items'][0]['statistics']['likeCount'])
